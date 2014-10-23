@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
+/*get this from google fonts @import option*/
+
+/*This is a comment */
+/*Always end in a semi-colon*/
+
+/*TYPE SELECTOR!!!*/
+p {/*Selects all <p>*/
+font-size: 16px; /*1em*/
+line-height: 1.5em;
+}
+
+figcaption {
+	font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	font-family: 'Elsie Swash Caps', cursive;
+	/*font: normal 0.75em/1.5em Georgia, "New Times Roman", serif;*/
+	color: grey;
+	text-align: center;
+}
+
+/*CLASS SELECTOR!!!*/
+/*applies to as many elements as you like */
+
+.milk-text { /*select elements with class="milk-text"*/
+font: bold 2.6em 'Elsie Swash Caps', cursive;
+color: white;
+text-shadow: 0 2px 3px black; /*horizontal, vertical, blur radius, color*/
+}
+
+/*ID SELECTOR!!!*/
+/*applies to one unique element per page*/
+#logo {/*select elements with id="logo"*/
+background-color: orange;
+}
+
+/*DESCENDENT SELECTOR!!!*/
+#logo h1 {/*styles only h1 within logo ID*/
+font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {/*styles only h2 within logo ID*/
+font-family: 'Elsie Swash Caps', cursive;
+}
+
+/*PSEUDO CLASS SELECTORS!!!*/
+/*classes and event states*/
+#details a:link {
+	color:black;
+	text-decoration: none;
+}
+
+#details a:visited {
+	color:black;
+	text-decoration: none;
+}
+
+#details a:hover {
+	color:orange;
+	text-decoration: underline;
+}
+
+#details a:active {
+	color:red;
+	text-decoration: underline;
+}
+
+/* CAN ALSO WRITE LIKE THIS
+#details a:link, #details visited {
+	color:black;
+	text-decoration: none;
+}*/
