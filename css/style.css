@@ -33,7 +33,6 @@ text-shadow: 0 2px 3px black; /*horizontal, vertical, blur radius, color*/
 /*ID SELECTOR!!!*/
 /*applies to one unique element per page*/
 #logo {/*select elements with id="logo"*/
-background-color: orange;
 }
 
 /*DESCENDENT SELECTOR!!!*/
@@ -72,3 +71,86 @@ font-family: 'Elsie Swash Caps', cursive;
 	color:black;
 	text-decoration: none;
 }*/
+
+/*/////// MEDIA ///*/
+img, video, audio {
+	max-width: 100%;
+}
+
+/*/////// LAYOUT ///*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.col-1 {
+	float: left;
+	width: 32%;
+	background: #ccc;
+}
+
+.col-2 {
+	float: left;
+	width: 66%;
+	background: #ccc;
+}
+
+.col-3 {
+	background: #ccc;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+[class*="col-"] {
+	margin-left: 2%;
+}
+
+.first {
+	margin-left: 0%;
+}
+
+/*/////// SECTIONS ///*/
+section {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	z-index: 1;
+}
+
+/*/////// SOCIAL ///*/
+
+#social {
+	position: fixed;
+	top: 200px;
+	right: 20px;
+	width: 40px;
+	z-index: 1;
+}
+
+#social a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: orange;
+}
